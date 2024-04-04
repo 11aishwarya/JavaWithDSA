@@ -6,7 +6,7 @@ public class Substr {
 //       skip("",str);
         System.out.println(skip2("aabcdesaaa"));
         System.out.println(skipapple("abcappleef"));
-        System.out.println(skipappnotapple("appleappcdesf"));
+        System.out.println(skipappnotapple(" appleappcdesf"));
     }
 
     public static void skip(String p,String up){
