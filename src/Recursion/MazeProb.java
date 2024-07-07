@@ -8,7 +8,7 @@ public class MazeProb {
         //System.out.println(count(3,3));
         //path("",3,3);
         //System.out.println(pathRt("",3,3));
-        //System.out.println(pathRtDiagonaly("",3,3));
+        //System.out.println(pathRtDiagonally("",3,3));
         boolean[][] board = {
                 {true,true,true},{true,false,true},{true,true,true}
         };
@@ -56,7 +56,7 @@ public class MazeProb {
         return list1;
     }
 
-    static ArrayList<String> pathRtDiagonaly(String p , int r , int c){
+    static ArrayList<String> pathRtDiagonally(String p , int r , int c){
         if(r == 1 && c == 1){
             ArrayList<String> list = new ArrayList<>();
             list.add(p);
@@ -64,13 +64,13 @@ public class MazeProb {
         }
         ArrayList<String> list1 = new ArrayList<>();
         if(r>1 && c >1){
-            list1.addAll(pathRtDiagonaly(p+'d',r-1,c-1));
+            list1.addAll(pathRtDiagonally(p+'d',r-1,c-1));
         }
         if(r > 1){
-            list1.addAll(pathRtDiagonaly(p+'D',r-1,c));
+            list1.addAll(pathRtDiagonally(p+'D',r-1,c));
         }
         if(c>1){
-            list1.addAll(pathRtDiagonaly(p+'R',r,c-1));
+            list1.addAll(pathRtDiagonally(p+'R',r,c-1));
         }
        // System.out.println(list1.size());
         return list1;
