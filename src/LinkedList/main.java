@@ -18,16 +18,27 @@ public class main {
 //        list.get(2);
 
 
-        DLL list = new DLL();
-        list.insertF(3);
-        list.insertF(2);
-        list.insertF(4);
-        list.insertF(7);
-        list.insertLast(8);
-        list.insertLast(6);
-        list.insertParticulatvalueAfter(7,65);
-        list.Display();
+//        DLL list = new DLL();
+//        list.insertF(3);
+//        list.insertF(2);
+//        list.insertF(4);
+//        list.insertF(7);
+//        list.insertLast(8);
+//        list.insertLast(6);
+//        list.insertParticulatvalueAfter(7,65);
+//        list.Display();
 
+         CLL list = new CLL();
+         list.insert(23);
+         list.insert(3);
+        list.insert(33);
+        list.insert(8);
+
+        list.dispaly();
+
+        list.delete(3);
+
+        list.dispaly();
     }
 
 }
